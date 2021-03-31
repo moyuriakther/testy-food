@@ -1,0 +1,26 @@
+.header{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.logo{
+    height: 20px;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+}
+.header-link{
+    display: flex;
+}
+.header-link div {
+    margin-left: 20px;
+}
+.menu {
+    color:black;
+}
+.btn-login{
+    background-color: tomato;
+    color: white;
+    padding: 8px 15px;
+    border-radius:5px;
+}
