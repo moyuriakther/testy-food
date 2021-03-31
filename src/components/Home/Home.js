@@ -7,6 +7,7 @@ import friedChiken from '../../images/fried-chiken.jpg';
 import friedRice from '../../images/fried-rice.png';
 import lacchi from '../../images/lacchi.jpg';
 import sandwitch from '../../images/sandwitch.jpg';
+import khichuri from '../../images/hospos.jpg';
 import Item from '../Item/Item';
 import { Row } from 'react-bootstrap';
 
@@ -20,43 +21,48 @@ const Home = () => {
     }
     const items = [
         {
-            description: 'Faluda',
+            productName: 'Faluda',
             imgUrl: `${faluda}`,
             price: 'Faluda',
         },
         {
-            description: 'CAR',
+            productName: 'CAR',
             imgUrl: `${beefBiriyani}`,
             price: 'Car',
         },
         {
-            description: 'BUS',
+            productName: 'BUS',
             imgUrl: `${burgur}`,
             price: 'Burgur',
         },
         {
-            description: ' TRAIN',
+            productName: ' TRAIN',
             imgUrl: `${chikenBiriyani}`,
             price: 'Train',
         },
         {
-            description: ' TRAIN',
+            productName: ' TRAIN',
             imgUrl: `${friedChiken}`,
             price: 'Train',
         },
         {
-            description: ' TRAIN',
+            productName: ' TRAIN',
             imgUrl: `${friedRice}`,
             price: 'Train',
         },
         {
-            description: ' TRAIN',
+            productName: ' TRAIN',
             imgUrl: `${lacchi}`,
             price: 'Train',
         },
         {
-            description: ' TRAIN',
+            productName: ' TRAIN',
             imgUrl: `${sandwitch}`,
+            price: 'Train',
+        },
+        {
+            productName: ' TRAIN',
+            imgUrl: `${khichuri}`,
             price: 'Train',
         }
     ]
@@ -64,7 +70,7 @@ const Home = () => {
         <div>
             <Row style={style}>
             {
-                items.map(item => <Item key={item.description} item={item}></Item>)
+                items.map(item => <Item key={item.productName} item={item}></Item>)
             }
             </Row>
          </div>

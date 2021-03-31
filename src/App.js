@@ -5,6 +5,8 @@ import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import { Container } from "react-bootstrap";
 import Home from "./components/Home/Home";
+import Checkout from "./components/Checkout/Checkout";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -22,9 +24,9 @@ function App() {
               <Route path="/login">
                 <Login/>
               </Route>
-              {/* <PrivateRoute path="/book/:bedType"> */}
-                {/* <Book /> */}
-              {/* </PrivateRoute> */}
+              <PrivateRoute path="/checkout/:productName">
+                <Checkout/>
+              </PrivateRoute>
               <Route exact path="/">
                 <Home />
               </Route>
