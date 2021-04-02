@@ -4,6 +4,7 @@ import "firebase/auth";
 import firebaseConfig from "./firebase.config";
 import { UserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
+import { Button } from "react-bootstrap";
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
@@ -40,8 +41,8 @@ const Login = () => {
       });
   };
   return (
-    <div>
-      <button onClick={handleSignIn}>Sign In With Google</button>
+    <div style={{display:"flex", justifyContent:"center"}}>
+      <Button onClick={handleSignIn}>Sign In With Google</Button>
     </div>
   );
 };

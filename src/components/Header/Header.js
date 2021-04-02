@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../App';
 import './Header.css'
@@ -11,7 +11,7 @@ const Header = () => {
         <div className="nav">
           
                <div>
-                   <h3 style={{fontWeight:"bold"}}><Link to="/home" className="menu">Fresh Food</Link></h3>
+                   <h3 style={{fontWeight:"bold"}}><Link to="/home" className="menu">Testy Food</Link></h3>
                </div>
            <div className="header-link">
                <div>
