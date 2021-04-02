@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import Home from "./components/Home/Home";
 import Checkout from "./components/Checkout/Checkout";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Admin from "./components/Admin/Admin";
 
 export const UserContext = createContext();
 
@@ -24,6 +25,9 @@ function App() {
               <Route path="/login">
                 <Login/>
               </Route>
+              <PrivateRoute path="/admin">
+                <Admin/>
+              </PrivateRoute>
               <PrivateRoute path="/checkout/:productName">
                 <Checkout/>
               </PrivateRoute>
